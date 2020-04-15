@@ -1,7 +1,7 @@
 
-# Spectre Modular VCV plugins
+# Frequency Domain VCV plugins
 
-Frequency Domain based VCV Plugins
+Frequency domain based VCV Plugins
 
 ## Harmonic Convergence
 ![Harmonic Convergence](./doc/harmonic_convergence.png)
