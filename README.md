@@ -8,6 +8,9 @@ Frequency domain based VCV Plugins
 
 - Spectral Resyntheszer
 - Takes one or two inputs, analyzes their spectal content and then drives up to 36 oscillators based on that analysis
+- Right click to adjust Windowing Function and each inputs Frame Size
+    Smaller frame sizes handle transients (like drums and speech beter), but the pitch becomes less accurate
+    Large frame sizes more accurately detect pitch, but can make some input sounds seem like they have reverb 
 - The Morph panel controls the how much each input contributes to each individual osccilator.
 - Panning allows each oscillator to be placed in the stereo field
 - Frequency Shift shifts all oscillators +/- 3 octaveas
@@ -26,6 +29,7 @@ This is great for creating inharmonic sounds
 
 - In loving memory of Native Instrument's Spektral Delay.
 - Each frequency band can have its own initial volume level, delay time and feedback amount
+- Right click to adjust Windowing Function and Frame Size
 - Send and Return allow the Feedback to be further processed
 - 2 or more Delayed Reactions can be used as expanders. When the LINK is enabled, drawing a curve on the master DR copies it to the others.
 - the PIN0s keep values that are 0 at 0, even if being CV'd
@@ -36,5 +40,6 @@ This is great for creating inharmonic sounds
 
 - Essentially a spectral based vocoder.
 - Frequency bands can be placed individually in the stereo field
+- Right click to adjust Windowing Function and Frame Size
 - Band spread allows frequency bands to modulate its neighbors.
 - Inverter buttons make loudest frequency bands the quietest and vice-versa
