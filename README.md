@@ -8,9 +8,9 @@ Frequency domain based VCV Plugins
 
 - Spectral Resyntheszer
 - Takes one or two inputs, analyzes their spectal content and then drives up to 36 oscillators based on that analysis
-- Right click to adjust Windowing Function and each inputs' Frame Size
-Smaller frame sizes handle transients (like drums and speech beter), but the pitch becomes less accurate
-Large frame sizes more accurately detect pitch, but can make some input sounds seem like they have reverb 
+- Right click to adjust Windowing Function and each inputs' Frame Size  
+Smaller frame sizes handle transients (like drums and speech beter), but the pitch becomes less accurate   
+Large frame sizes more accurately detect pitch, but can make some input sounds seem like they have reverb
 - The Morph panel controls the how much each input contributes to each individual osccilator.
 - Panning allows each oscillator to be placed in the stereo field
 - Frequency Shift shifts all oscillators +/- 3 octaveas
