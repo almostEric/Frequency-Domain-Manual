@@ -15,14 +15,16 @@ Large frame sizes more accurately detect pitch, but can make some input sounds s
 - Panning allows each oscillator to be placed in the stereo field
 - Frequency Shift shifts all oscillators +/- 3 octaveas
 - Frequency Warp pushes oscilator's frequency away from center frequency 
-- If the V1 switch is on, the center frequency tracks the main oscillator and Center control adds an offset
+- If the V1 switch is on, the center frequency tracks the main oscillator and Center control adds an offset  
 This is great for creating inharmonic sounds
 - Spectral Mode changes how the most prominent frequency bands drive the voice oscillators
 - Voice Shift allows the magnitude of one frequency to control another
 - Frequency Modulation inputs are polyphonic. You can have up to 32 FM inputs (using both FM inputs). The FM Matrix controls which FM input (x axis) modulates which oscillator (y axis).
 - FM Amount allows per oscillator FM control
-- RM/AM inputs are polyphonic. You can have up to 32 inputs (using both RM/AM inputs). The RM/AM Matrix controls which AM/RM input (x axis) modulates which oscillator (y axis).
-- If Internal is turned on the RM Matrix allows oscillators to Ring Modulate one another. RM Mix controls the blend between the original oscillator voice and the results of ring modulation 
+- RM/AM inputs are polyphonic. You can have up to 32 inputs (using both RM/AM inputs).  
+- RM/AM Matrix controls which AM/RM input (x axis) modulates which oscillator (y axis).
+- If Internal is turned on the RM Matrix allows oscillators to Ring Modulate one another. 
+- RM Mix controls the blend between the original oscillator voice and the results of ring modulation 
 
 ## Delayed Reaction
 ![Delayed Reaction](./doc/delayed_reaction.png)
