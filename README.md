@@ -41,11 +41,11 @@ This is great for creating inharmonic sounds
 - Send and Return allow the Feedback to be further processed
 - 2 or more Delayed Reactions can be used as expanders. When the LINK is enabled, drawing a curve on the master DR copies it to the others.
 - PINxs have five modes
-- - Off - PinX control has no effect
- - Light Green - values (without CV) less than pinX axis are set to pinXs value, otherwise use value (+ cv)
- - Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
- - Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
- - Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
+  * Off - PinX control has no effect
+  * Light Green - values (without CV) less than pinX axis are set to pinXs value, otherwise use value (+ cv)
+  * Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
+  * Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
+  * Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
 
 ## Morphology
 ![Morphology](./doc/morphology.png)
