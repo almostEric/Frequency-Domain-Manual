@@ -11,6 +11,7 @@ Frequency domain based VCV Plugins
 - Right click to adjust Windowing Function and each inputs' Frame Size  
 Smaller frame sizes handle transients (like drums and speech beter), but the pitch becomes less accurate   
 Large frame sizes more accurately detect pitch, but can make some input sounds seem like they have reverb
+- Right click on grids to choose from default shapes or transform patterns
 - The Morph panel controls the how much each input contributes to each individual osccilator.
 - Voice Count specifies how many oscillators are used (1-36)
 - Waveform specifies what waveform the oscillators output
@@ -52,6 +53,7 @@ This is great for creating inharmonic sounds
 
 - Essentially a spectral based vocoder.
 - Frequency bands can be placed individually in the stereo field
-- Right click to adjust Windowing Function and Frame Size
-- Band spread allows frequency bands to modulate its neighbors.
+- Band spread allows frequency bands to modulate their neighbors.
 - Inverter buttons make loudest frequency bands the quietest and vice-versa
+- Right click to adjust Windowing Function and Frame Size
+- Right click on grids to choose from default shapes or transform patterns
