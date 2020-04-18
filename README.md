@@ -37,10 +37,15 @@ This is great for creating inharmonic sounds
 - In loving memory of Native Instrument's Spektral Delay.
 - Each frequency band can have its own initial volume level, delay time and feedback amount
 - Right click to adjust Windowing Function and Frame Size
+- Right click on grids to choose from default shapes or transform patterns
 - Send and Return allow the Feedback to be further processed
 - 2 or more Delayed Reactions can be used as expanders. When the LINK is enabled, drawing a curve on the master DR copies it to the others.
-- the PIN0s keep values that are 0 at 0, even if being CV'd
-
+- PINxs have five modes
+ - Off - PinX control has no effect
+ - Light Green - values (without CV) less than pinX axis are set to pinXs value, otherwise use value (+ cv)
+ - Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
+ - Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
+ - Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
 
 ## Morphology
 ![Morphology](./doc/morphology.png)
