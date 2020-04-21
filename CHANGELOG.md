@@ -1,3 +1,8 @@
+### 1.3.0 (202-04-21)
+- Added Invert Thresholds to Morphology
+- Improved AM sound in Harmonic Convergence
+- Minor UI improvements
+
 ### 1.2.0 (2020-04-18)
 - Added Pin X axis modes with CV controlable Axis to Morphology
 

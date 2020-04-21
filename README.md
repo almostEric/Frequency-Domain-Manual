@@ -55,5 +55,7 @@ This is great for creating inharmonic sounds
 - Frequency bands can be placed individually in the stereo field
 - Band spread allows frequency bands to modulate their neighbors.
 - Inverter buttons make loudest frequency bands the quietest and vice-versa
+- Each input has a CV controllable Invert threshold which determines how loud a band must be for it to be inverted.  
+At low thresholds the input can become very noisey  
 - Right click to adjust Windowing Function and Frame Size
 - Right click on grids to choose from default shapes or transform patterns
