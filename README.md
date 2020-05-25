@@ -3,10 +3,40 @@
 
 Frequency domain based VCV Plugins
 
+## Freudian Slip
+![Frudian Slop](./doc/freudian_slip.png)
+
+- Sample based Spectral Resyntheszer
+- Right click to load sample
+- Analyzes the sample's spectal content and then drives up to 32 oscillators based on that analysis
+- Right click to adjust Windowing Function which alters harmonic content  
+- Right click on grids to choose from default shapes or transform patterns
+- Play Speed cobtrols the duration of the playback without changing pitch
+- Negative play speeds play sample in reversse
+- By drawing a curve, each voice can have its own play speed - even ones where some voices go forwards, others in reverse
+- Voice Count specifies how many oscillators are used (1-32)
+- Waveform specifies what waveform the oscillators output
+- Frequency Warp pushes oscilator's frequency away from CENTER frequency 
+- If the V1 switch is on, the center frequency tracks the main oscillator and CENTER control adds an offset  
+This is great for creating inharmonic sounds
+- Frequency Modulation inputs are polyphonic. You can have up to 32 FM inputs (using both FM inputs). 
+- Randomize controls amount of randoming stepping between frames
+- FM Matrix controls which FM input (x axis) modulates which oscillator (y axis).
+- FM Amount allows per oscillator FM control
+- RM/AM inputs are polyphonic. You can have up to 32 inputs (using both RM/AM inputs).  
+- RM/AM Matrix controls which AM/RM input (x axis) modulates which oscillator (y axis).
+- If Internal is turned on the RM Matrix allows oscillators to Ring Modulate one another. 
+- AM/RM Mix controls the amount of amplitude modulation 
+- In Internal mode, AM/RM Mix controls the blend between the original oscillator voice and the results of ring modulation 
+- Panning allows each oscillator to be placed in the stereo field
+- X AND Y inputs on all grids allow CV Modulation of grid in either dimension
+- Panning and Play Speed grids have rotate CV input that rotates x values around the y axis
+
+
 ## Harmonic Convergence
 ![Harmonic Convergence](./doc/harmonic_convergence.png)
 
-- Spectral Resyntheszer
+- Live Spectral Resyntheszer
 - Takes one or two inputs, analyzes their spectal content and then drives up to 36 oscillators based on that analysis
 - Right click to adjust Windowing Function and each inputs' Frame Size  
 Smaller frame sizes handle transients (like drums and speech beter), but the pitch becomes less accurate   
@@ -47,6 +77,7 @@ This is great for creating inharmonic sounds
   * Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
   * Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
   * Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
+- Rotation allows rotating x values around the oinX axis
 
 ## Morphology
 ![Morphology](./doc/morphology.png)
@@ -59,3 +90,4 @@ This is great for creating inharmonic sounds
 At low thresholds the input can become very noisey  
 - Right click to adjust Windowing Function and Frame Size
 - Right click on grids to choose from default shapes or transform patterns
+- Rotation allows rotating x values around the oinX axis

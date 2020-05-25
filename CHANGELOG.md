@@ -1,4 +1,10 @@
-### 1.3.0 (202-04-21)
+### 1.5.0 (2020-05-25)
+- Added Freudian Slip Module
+
+### 1.4.0 (2020-05-16)
+- Added Axis rotation to Delayed Reaction and Morphology
+
+### 1.3.0 (2020-04-21)
 - Added Invert Thresholds to Morphology
 - Improved AM sound in Harmonic Convergence
 - Minor UI improvements
