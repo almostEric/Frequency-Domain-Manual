@@ -11,7 +11,7 @@ Frequency domain based VCV Plugins
 - Analyzes the sample's spectal content and then drives up to 32 oscillators based on that analysis
 - Right click to adjust Windowing Function which alters harmonic content  
 - Right click on grids to choose from default shapes or transform patterns
-- Play Speed cobtrols the duration of the playback without changing pitch
+- Speed cobtrols the speed or duration of the playback without changing pitch
 - Negative play speeds play sample in reversse
 - By drawing a curve, each voice can have its own play speed - even ones where some voices go forwards, others in reverse
 - Voice Count specifies how many oscillators are used (1-32)
@@ -25,9 +25,7 @@ This is great for creating inharmonic sounds
 - FM Amount allows per oscillator FM control
 - RM/AM inputs are polyphonic. You can have up to 32 inputs (using both RM/AM inputs).  
 - RM/AM Matrix controls which AM/RM input (x axis) modulates which oscillator (y axis).
-- If Internal is turned on the RM Matrix allows oscillators to Ring Modulate one another. 
 - AM/RM Mix controls the amount of amplitude modulation 
-- In Internal mode, AM/RM Mix controls the blend between the original oscillator voice and the results of ring modulation 
 - Panning allows each oscillator to be placed in the stereo field
 - X AND Y inputs on all grids allow CV Modulation of grid in either dimension
 - Panning and Play Speed grids have rotate CV input that rotates x values around the y axis
