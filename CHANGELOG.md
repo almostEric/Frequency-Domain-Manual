@@ -1,3 +1,6 @@
+### 1.5.5 (2020=05-26)
+- Added Start/Stop conrtrol to Frudian Slip
+
 ### 1.5.0 (2020-05-25)
 - Added Freudian Slip Module
 

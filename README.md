@@ -11,6 +11,10 @@ Frequency domain based VCV Plugins
 - Analyzes the sample's spectal content and then drives up to 32 oscillators based on that analysis
 - Right click to adjust Windowing Function which alters harmonic content  
 - Right click on grids to choose from default shapes or transform patterns
+- Start and Stop grids control where in the sample playback starts/stops
+- If Equal distance mode is on, each voice will travel the same distance whether playing forward or backwards  
+If voices are playing forward and backwards simultaneously, this means they may not stop at the same position  
+but it minimizes cases where no sound is heard
 - Speed cobtrols the speed or duration of the playback without changing pitch
 - Negative play speeds play sample in reversse
 - By drawing a curve, each voice can have its own play speed - even ones where some voices go forwards, others in reverse
@@ -27,6 +31,9 @@ This is great for creating inharmonic sounds
 - RM/AM Matrix controls which AM/RM input (x axis) modulates which oscillator (y axis).
 - AM/RM Mix controls the amount of amplitude modulation 
 - Panning allows each oscillator to be placed in the stereo field
+- EOC Mode controls when the EOC pulse is sent and when the sample loops
+  * Green - EOC is when all voices finish
+  * Orange - EOC is when first voice finishes
 - X AND Y inputs on all grids allow CV Modulation of grid in either dimension
 - Panning and Play Speed grids have rotate CV input that rotates x values around the y axis
 
