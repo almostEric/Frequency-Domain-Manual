@@ -4,7 +4,7 @@
 Frequency domain based VCV Plugins
 
 ## Freudian Slip
-![Frudian Slop](./doc/freudian_slip.png)
+![Freudian Slip](./doc/freudian_slip.png)
 
 - Sample based Spectral Resyntheszer
 - Right click to load sample
@@ -36,6 +36,36 @@ This is great for creating inharmonic sounds
   * Orange - EOC is when first voice finishes
 - X AND Y inputs on all grids allow CV Modulation of grid in either dimension
 - Panning and Play Speed grids have rotate CV input that rotates x values around the y axis
+
+## Grains of Wrath
+![Grains of Wrath](./doc/grains_of_wrath.png)
+- Sample and Live input Granular Synthesizer
+- Most parameters use FD's grid controls. You can either draw your own shapes, or right click to choose a preset pattern, or to modify the exisiting pattern
+- These patterns can be modified by CV - either shifted vertically, horizontally or rotated around the Y axis.
+- Right click on module to load individual samples or use a directory to fill slots
+- If a Sample's play speed is 0, then the Start Position is used to determine where grain comes from.
+- If a Sample's play speed is non-zero, then the sample plays forward (or backwards) and the grain is pulled from current position
+- The Live Input is polyphonic - up to 16 live inputs can be used.
+- Unused voices (either samples or live inputs, are red in the voice weighting grid and do not contribute to grain selection)
+- A voice is either a sample or live input - there can be a total of 32 voices 
+- Voice Weighting determines the chance a sample or live voice will be used to generate a grain. Weighting is relative, so if all voices have same value, they have the same chance.
+- Weighting can vary from linear to logarithmic (logarithmic lowers chance of lower percentages)
+- Grain Density controls how often a grain is created, its range is from one every 10 seconds to 1000/sec. The RANDOM knob changes the grain spawn time up to +/- 50%.
+- If a clock is fed into the EXTERNAL input, it is used to create Grains.
+- Each voice can use an envelope to shape its grains. In order they are None, Triangle, Welch, Sin, Hanning, Blackman, Nutall, Kaiser, Exponential Decay, Exponential Attack
+- Each voice can have its own grain size. at 44.1KHz sample rate they range from 1ms to 200ms.
+- Each voice can have its grains pitch shifted from -3 to +3 octaves. By holding shift key when drawing on grid, each voice can have a random range of pitch shifting.
+- Each voice can have its grains panned. By holding shift key when drawing on grid, the panning can have a random range.
+- Pitch and Panning randomness can use Gaussian curves which tend to cluster more towards the original value.
+- The FREEZE input is polyphonic, when frozen, the corresponding live voice stops recording and uses its current buffer for its grain source. 
+   Frozen voices are blue in the voice weighting grid.
+- There are two REVERSE inputs, the first for samples, the second for live inputs. Both are polyphonic. When a voice is reversed, the grains are read from the buffer in reverse order.
+- The FREEZE and REVERSE inputs can either be Gates or Triggers depending on mode selected.
+- The Grain Display shows how many grains are currently active and which voice generated them.
+  Grains with larger sizes will be longer in the grain display.
+  The if the pitch is shifted lower, it will become more red. If it shifted higher, it is more green,
+  Reversed grains have a white border around them.
+  When a grain is spawned it starts at the left-most edge, then moves right (but this happens *very* quickly)
 
 
 ## Harmonic Convergence
