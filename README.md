@@ -2,6 +2,27 @@
 # Frequency Domain VCV plugins
 
 Frequency domain based VCV Plugins
+## Ball of Confusion
+![Freudian Slip](./doc/ball_of_confusion.png)
+- A true Spherical Wavetable Oscillator
+- Uses wavetables based on the Serum standard (WAV files with each table having 2048 points)
+- Load Directory/Load Wavetable will reset sphere to load each file of directory/individual file 
+- Add Wavetable will add the wavetable file to existing configuration
+-- note: Serum Wavetable files can contain multiple samples per file
+- Each point on the sphere represents a waveform (wavetable files can contain multiple waveforms)
+- Each file has its own color on the sphere
+- Scatter will adjust distribution of sample on sphere so that samples from same file are not adjacent, which allows for potentially more intersting combinations
+- The YAW, PITCH and ROLL Controls rotate the spehre to allow different wavetables to be used. The four wave tables closest to a point near the center of the sphere will be morphed together - the amount each wavetable controbutes to the final waveform is based on how close each one is to this point.
+- MORPH Modes
+-- Interpolate averages each point from up to 4 samples based on their distance. Samples closer to the origin point contribte more.
+-- Spectral mode uses FFT analysis to average the spectrums of each wavetable to create a composite waveform based on the frequency domain
+-- Spectral 0 mode ignores the phase component of the FFT analysis
+- SHIFT
+-- in interpolation mode, shifting changes which values are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the shift.
+-- In the Spectal modes,  shifting changes which frequency bands are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the band shift. this tends to add greater harmonics
+-- If the Sync Mode is set to Hard, and a signal is sent to the SYNC input, then each time thas signal crosses 0, the waveform is reset.
+-- If the Sync Mode is set to Soft, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reset.
+
 
 ## Freudian Slip
 ![Freudian Slip](./doc/freudian_slip.png)
