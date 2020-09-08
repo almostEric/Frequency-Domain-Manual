@@ -3,7 +3,7 @@
 
 Frequency domain based VCV Plugins
 ## Ball of Confusion
-![Freudian Slip](./doc/ball_of_confusion.png)
+![Ball of Confusion](./doc/ball_of_confusion.png)
 - A true Spherical Wavetable Oscillator
 - Uses wavetables based on the Serum standard (WAV files with each table having 2048 points)
 - Load Directory/Load Wavetable will reset sphere to load each file of directory/individual file 
@@ -23,6 +23,14 @@ Frequency domain based VCV Plugins
 -- If the Sync Mode is set to Hard, and a signal is sent to the SYNC input, then each time thas signal crosses 0, the waveform is reset.
 -- If the Sync Mode is set to Soft, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reset.
 
+## Box of Revelation
+![Box of Revelation](./doc/box_of_revelation.png)
+- Inspired by a well known Eurorack module
+- Each cube model consists of up to 7 filters in a parallel/serial configuration
+- Each vertex of the cube represents the parameters of those 7 filters
+- By navigating through the cube using the Frequency, X and Y paramters, you can morph between these parameters
+- You can edit the json file and create your own cubes - there is a read me file in the preset directory with instructions.
+- New cubes will be added :)
 
 ## Freudian Slip
 ![Freudian Slip](./doc/freudian_slip.png)

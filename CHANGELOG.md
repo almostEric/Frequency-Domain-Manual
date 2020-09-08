@@ -1,3 +1,8 @@
+### 1.8.0 (2020-09-08)
+- Added Box of Revelation Module
+- New Sync Mode for Ball of Confusion
+- Fixed Crashing issue in BoC
+
 ### 1.7.0 (2020-08-10)
 - Added Ball of Confusion Module
 
