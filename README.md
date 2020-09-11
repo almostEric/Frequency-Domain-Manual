@@ -17,11 +17,13 @@ Frequency domain based VCV Plugins
 -- Interpolate averages each point from up to 4 samples based on their distance. Samples closer to the origin point contribte more.
 -- Spectral mode uses FFT analysis to average the spectrums of each wavetable to create a composite waveform based on the frequency domain
 -- Spectral 0 mode ignores the phase component of the FFT analysis
+-- Transfer takes the interpolation of 3 samples and uses that as a transfer function on the first wave table
 - SHIFT
--- in interpolation mode, shifting changes which values are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the shift.
+-- in interpolation and transfer modes, shifting changes which values are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the shift.
 -- In the Spectal modes,  shifting changes which frequency bands are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the band shift. this tends to add greater harmonics
 -- If the Sync Mode is set to Hard, and a signal is sent to the SYNC input, then each time thas signal crosses 0, the waveform is reset.
 -- If the Sync Mode is set to Soft, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reset.
+-- If the Sync Mode is set to Soft Reverse, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reversed.
 
 ## Box of Revelation
 ![Box of Revelation](./doc/box_of_revelation.png)
