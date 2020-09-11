@@ -1,6 +1,7 @@
 ### 1.8.1 (2020-09-08)
 - Adjusted volume on some cube models, added a couple more
 - New Morph Mode for Ball of Confusion - Transfer uses other wavetables as a wavetable transfer function
+- Added Wavefolding to BoC
 
 ### 1.8.0 (2020-09-08)
 - Added Box of Revelation Module

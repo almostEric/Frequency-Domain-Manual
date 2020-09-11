@@ -24,6 +24,7 @@ Frequency domain based VCV Plugins
 -- If the Sync Mode is set to Hard, and a signal is sent to the SYNC input, then each time thas signal crosses 0, the waveform is reset.
 -- If the Sync Mode is set to Soft, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reset.
 -- If the Sync Mode is set to Soft Reverse, if the phase of the waveform is before the SYNC POS (the gold line) when the SYNC Input crosses 0, the waveform will be reversed.
+- The Fold Control allows distortion of the wave shape using standard wavefolding technique 
 
 ## Box of Revelation
 ![Box of Revelation](./doc/box_of_revelation.png)
