@@ -1,3 +1,6 @@
+### 1.8.3 (2020-09-14)
+- Added Harmonich level control to BoC
+
 ### 1.8.2 (2020-09-12)
 - Adjusted volume on some cube models, added a couple more
 - New Morph Mode for Ball of Confusion - Transfer uses other wavetables as a wavetable transfer function

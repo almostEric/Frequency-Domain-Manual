@@ -26,6 +26,7 @@ Frequency domain based VCV Plugins
   * In interpolation and transfer modes, shifting changes which values are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the shift.
   * In the Spectal modes,  shifting changes which frequency bands are used to used to create composite waveform. within the four wavetables being used to create the composite waveform, the lower the ranking, the greater the band shift. this tends to add greater harmonics
 - The Fold Control allows distortion of the wave shape using standard wavefolding technique 
+- THe Harmonics grid allows you to control the levels of the first 16 harmonics - NOTE: This only works while using the 2 Spectral Morph Modes
 
 ## Box of Revelation
 ![Box of Revelation](./doc/box_of_revelation.png)
