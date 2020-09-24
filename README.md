@@ -35,6 +35,10 @@ Frequency domain based VCV Plugins
 - Each vertex of the cube represents the parameters of those 7 filters
 - By navigating through the cube using the Frequency, X and Y paramters, you can morph between these parameters
 - You can edit the json file and create your own cubes - there is a read me file in the preset directory with instructions.
+- There can be multiple cube files and you can load each module with diffrent files if you want.
+- Filters can have non-linear properties which adds a drive parameter, the higher the drive, the more red the frequency response display
+- Filter Topology Display shows the serial/parallel configuration of the (up to) 7 filters, and what type they are (LP,HP,BP,NR)
+- A green filter is normal/linear. Yellow - non-liner state path, Orange - non-linear feebback path, Red - both state and feedback paths are non-linear
 - New cubes will be added :)
 
 ## Freudian Slip

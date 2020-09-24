@@ -1,5 +1,9 @@
+### 1.8.4 (2020-09-24)
+- Added Non-Linear Filter Modes to BoR 
+- Added Filter Topology Display to BoR
+
 ### 1.8.3 (2020-09-14)
-- Added Harmonich level control to BoC
+- Added Harmonic level control to BoC
 
 ### 1.8.2 (2020-09-12)
 - Adjusted volume on some cube models, added a couple more
