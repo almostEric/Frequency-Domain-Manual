@@ -37,9 +37,35 @@ Frequency domain based VCV Plugins
 - You can edit the json file and create your own cubes - there is a read me file in the preset directory with instructions.
 - There can be multiple cube files and you can load each module with diffrent files if you want.
 - Filters can have non-linear properties which adds a drive parameter, the higher the drive, the more red the frequency response display
-- Filter Topology Display shows the serial/parallel configuration of the (up to) 7 filters, and what type they are (LP,HP,BP,NR)
+- Filter Topology Display shows the serial/parallel configuration of the (up to) 7 filters, and what type they are (LP,HP,BP,NR, Comb and Modal)
 - A green filter is normal/linear. Yellow - non-liner state path, Orange - non-linear feebback path, Red - both state and feedback paths are non-linear
 - New cubes will be added :)
+
+## Dance This Mesh Around
+![Dance This Mesh Around](./doc/dance_this_mesh_around.png)
+- Banded WaveGuide synthesizer with a waveguide mesh
+- Needs an impulse to create a sound (like from Heat of the Moment)
+- Signal is split into three frequency ranges, two go into simple waveguides (basically short duration delays), while the high frequencies go into the mesh
+- With careful tweaking, nice inharmonic gong sounds can be created (be careful with high feedback and non-linearity settings)
+- Three mesh topologies - Rectalinear, Triangle and Cubic. 
+- The Mesh size can be from 2-5 junctions per dimension. Higher sizes don't sound that much different, but use *lots* more CPU.
+
+## Delayed Reaction
+![Delayed Reaction](./doc/delayed_reaction.png)
+
+- In loving memory of Native Instrument's Spektral Delay.
+- Each frequency band can have its own initial volume level, delay time and feedback amount
+- Right click to adjust Windowing Function and Frame Size
+- Right click on grids to choose from default shapes or transform patterns
+- Send and Return allow the Feedback to be further processed
+- 2 or more Delayed Reactions can be used as expanders. When the LINK is enabled, drawing a curve on the master DR copies it to the others.
+- PINxs have five modes
+  * Off - PinX control has no effect
+  * Light Green - values (without CV) less than pinX axis are set to pinXs value, otherwise use value (+ cv)
+  * Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
+  * Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
+  * Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
+- Rotation allows rotating x values around the oinX axis
 
 ## Freudian Slip
 ![Freudian Slip](./doc/freudian_slip.png)
@@ -122,6 +148,7 @@ Large frame sizes more accurately detect pitch, but can make some input sounds s
 - Frequency Warp pushes oscilator's frequency away from CENTER frequency 
 - If the V1 switch is on, the center frequency tracks the main oscillator and CENTER control adds an offset  
 This is great for creating inharmonic sounds
+- Analysis Center and Bandwidth specify which portions of the FFT are analyzed and used for voicing. Center at 50% and Bandwidth full (the defaults) means everything gets used.
 - Spectral Mode changes how the most prominent frequency bands drive the voice oscillators
 - Voice Shift allows the magnitude of one frequency to control another
 - Frequency Modulation inputs are polyphonic. You can have up to 32 FM inputs (using both FM inputs). 
@@ -135,22 +162,16 @@ This is great for creating inharmonic sounds
 - Panning allows each oscillator to be placed in the stereo field
 - X AND Y inputs on all grids allow CV Modulation of grid in either dimension
 
-## Delayed Reaction
-![Delayed Reaction](./doc/delayed_reaction.png)
+## Heat of the Moment
+![Heat of the Moment](./doc/heat_of_the_moment.png)
 
-- In loving memory of Native Instrument's Spektral Delay.
-- Each frequency band can have its own initial volume level, delay time and feedback amount
-- Right click to adjust Windowing Function and Frame Size
-- Right click on grids to choose from default shapes or transform patterns
-- Send and Return allow the Feedback to be further processed
-- 2 or more Delayed Reactions can be used as expanders. When the LINK is enabled, drawing a curve on the master DR copies it to the others.
-- PINxs have five modes
-  * Off - PinX control has no effect
-  * Light Green - values (without CV) less than pinX axis are set to pinXs value, otherwise use value (+ cv)
-  * Green - values (without CV) less than pinX axis are unchanged, otherwise use value (+ cv)
-  * Pink - values (without CV) greater than pinX axis are set to pinXs value, otherwise use value (+ cv)
-  * Red - values (without CV) greater than pinX axis are unchanged, otherwise use value (+ cv)
-- Rotation allows rotating x values around the oinX axis
+- Impulse Generator
+- Takes a gate input and sends out windowed noise impulses
+- Different colors of noise can be generated, and different window functions used to shape its envelope
+- The noise impulse can have 1-4 peaks
+- The duration of the impulse can be controlled
+- If the gate is held open, the impulse will retrigger based on the repeat time parameter
+
 
 ## Morphology
 ![Morphology](./doc/morphology.png)

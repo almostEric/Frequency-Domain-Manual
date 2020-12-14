@@ -1,3 +1,12 @@
+### 1.9.1 (2020-12-15)
+- Added Modal Filters to Box of Revelation
+- Added Feedback, Analysis Center and Bandwidth controls to Harmonic Convergence
+
+### 1.9.0 (2020-11-11)
+- Added Heat of the Moment impulse Generator, Dance This Mesh Around drum synthesizer
+- Added Comb Filters to BoR
+- Added Decimation wavefolding to BoC
+
 ### 1.8.4 (2020-09-24)
 - Added Non-Linear Filter Modes to BoR 
 - Added Filter Topology Display to BoR
